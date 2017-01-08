@@ -1,0 +1,9 @@
+<h1>HERE ARE ALL THE INGREDIENTS</h1>
+
+<h2>
+  <ol>
+    <% @ingredients.each do |i| %>
+    <li><%= link_to i.name, i %></li>
+    <% end %>
+  </ol>
+</h2>

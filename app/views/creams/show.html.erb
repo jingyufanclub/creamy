@@ -1,0 +1,13 @@
+<h1>A CREAM</h1>
+
+<h2><%= @cream.name %></h2>
+<h3>
+  <%= @cream.brand %><br>
+  <%= @cream.cream_type %><br>
+  <%= @cream.price %><br>
+  <%= @cream.size %><br>
+  <%= @cream.notes %><br>
+  <% @cream.ingredients.each do |i| %>
+    <%= i.name %>
+  <% end %>
+</h3>
