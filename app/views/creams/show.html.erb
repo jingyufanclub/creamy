@@ -1,28 +1,27 @@
-<h1>
-  <%= @cream.name %>
-    <% if @cream.favorite %>
-    ♥︎
+<div id="page">
+  <h1>
+    <%= @cream.name %>
+      <% if @cream.favorite %>
+      ♥︎
+      <% end %>
+  </h1>
+  <h3>
+    Brand: <%= @cream.brand %><br>
+    Type: <%= @cream.cream_type %><br>
+    Price: <%= number_to_currency(@cream.price)%><br>
+    Size: <%= @cream.size %> ml<br>
+    Cost per ml: $<%= @cream.cost_per_unit %><br><br>
+    Salient Ingredients:
+  <ul style="list-style: none">
+    <% @cream.ingredients.each do |i| %>
+      <li><%= link_to i.name, i %></li>
     <% end %>
-</h1>
-
-<h3>
-  Brand: <%= @cream.brand %><br>
-  Type: <%= @cream.cream_type %><br>
-  Price: <%= number_to_currency(@cream.price)%><br>
-  Size: <%= @cream.size %> ml<br>
-  Cost per ml: $<%= @cream.cost_per_unit %><br><br>
-
-  Salient Ingredients:
-<ul style="list-style: none">
-  <% @cream.ingredients.each do |i| %>
-    <li><%= link_to i.name, i %></li>
-  <% end %>
-</ul>
-Notes: <%= @cream.notes %><br><br>
-</h3>
-  <%= button_to "EDIT THIS PRODUCT", edit_cream_path(@cream), method: :get %>
-  <%= button_to "DELETE THIS PRODUCT", @cream, method: :delete, data: { confirm: "Are you sure?" } %>
-
+  </ul>
+    Notes: <%= @cream.notes %><br><br>
+  </h3>
+    <%= button_to "EDIT THIS PRODUCT", edit_cream_path(@cream), method: :get %>
+    <%= button_to "DELETE THIS PRODUCT", @cream, method: :delete, data: { confirm: "Are you sure?" } %>
   <h2>
     <p><%= link_to "Back to Index", creams_path %></p>
   </h2>
+</div>

@@ -32,3 +32,8 @@ a:visited {
 a:hover {
     color: #D2B4DE;
 }
+
+#page {
+    padding: 50px;
+    margin: auto;
+}
