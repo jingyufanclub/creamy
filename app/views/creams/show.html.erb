@@ -2,17 +2,22 @@
 
 <h2><%= @cream.name %></h2>
 <h3>
-  <%= @cream.brand %><br>
-  <%= @cream.cream_type %><br>
-  <%= @cream.price %><br>
-  <%= @cream.size %><br>
-  <%= @cream.notes %><br>
-  <%= @cream.favorite %><br>
+  Brand: <%= @cream.brand %><br>
+  Type: <%= @cream.cream_type %><br>
+  Price: <%= number_to_currency(@cream.price)%><br>
+  Size: <%= @cream.size %> ml<br>
+  Cost per ml: $<%= @cream.cost_per_unit %><br>
+  Notes: <%= @cream.notes %><br>
+  <% if @cream.favorite %>
+    ♥︎
+  <% end %>
   <% @cream.ingredients.each do |i| %>
     <%= i.name %>
   <% end %>
 </h3>
-
-<h2>
+  <%= button_to "Edit This Product", edit_cream_path(@cream), method: :get %>
   <%= button_to "DELETE THIS PRODUCT", @cream, method: :delete, data: { confirm: "Are you sure?" } %>
-</h2>
+
+  <h2>
+    <p><%= link_to "Back to Index", creams_path %></p>
+  </h2>

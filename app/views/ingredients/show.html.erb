@@ -1,4 +1,13 @@
 <h1>AN INGREDIENT</h1>
 
 <h2><%= @ingredient.name %></h2>
-<h3><%= @ingredient.purpose %></h3>
+<h3>Purpose: <br>
+
+<%= @ingredient.purpose %></h3>
+
+<%= button_to "Edit This Ingredient", edit_ingredient_path(@ingredient), method: :get %>
+<%= button_to "DELETE THIS INGREDIENT", @ingredient, method: :delete, data: { confirm: "Are you sure?" } %>
+
+<h2>
+  <p><%= link_to "Back to Index", ingredients_path %></p>
+</h2>

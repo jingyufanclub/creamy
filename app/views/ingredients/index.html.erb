@@ -6,4 +6,6 @@
     <li><%= link_to i.name, i %></li>
     <% end %>
   </ol>
+
+  <%= button_to "Add an Ingredient", new_ingredient_path, method: :get %>
 </h2>
