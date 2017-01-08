@@ -1,0 +1,17 @@
+<%= form_for(@cream) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br><br>
+  <%= f.label :brand %>
+  <%= f.text_field :brand %><br><br>
+  <%= f.label :cream_type %>
+  <%= f.text_field :cream_type %><br><br>
+  <%= f.label :price %>
+  <%= f.number_field :price %><br><br>
+  <%= f.label :size %>
+  <%= f.number_field :size %><br><br>
+  <%= f.label :notes %><br>
+  <%= f.text_area :notes, size:"50x3" %><br><br>
+  <%= f.label :favorite, "Favorite?" %>
+  <%= f.check_box :favorite %><br><br>
+  <%= f.submit %>
+<% end %>

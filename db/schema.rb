@@ -26,8 +26,9 @@ ActiveRecord::Schema.define(version: 20170106005805) do
     t.decimal  "price"
     t.integer  "size"
     t.string   "notes"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.boolean  "favorite",   default: true
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "ingredients", force: :cascade do |t|

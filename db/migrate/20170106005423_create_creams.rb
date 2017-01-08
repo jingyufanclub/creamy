@@ -7,6 +7,8 @@ class CreateCreams < ActiveRecord::Migration[5.0]
       t.decimal :price
       t.integer :size
       t.string :notes
+      t.boolean :favorite, default: true
+
 
       t.timestamps
     end

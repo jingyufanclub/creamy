@@ -7,7 +7,12 @@
   <%= @cream.price %><br>
   <%= @cream.size %><br>
   <%= @cream.notes %><br>
+  <%= @cream.favorite %><br>
   <% @cream.ingredients.each do |i| %>
     <%= i.name %>
   <% end %>
 </h3>
+
+<h2>
+  <%= button_to "DELETE THIS PRODUCT", @cream, method: :delete, data: { confirm: "Are you sure?" } %>
+</h2>

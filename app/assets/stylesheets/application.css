@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+    background-color: #fff4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #4A235A;
+}
+
+a:visited {
+    color: #dcfcdc;
+}
+
+a:hover {
+    color: #D2B4DE;
+}
