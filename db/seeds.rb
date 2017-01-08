@@ -1,11 +1,27 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+require 'csv'
 
-creams = Cream.create([{name: "the best cream", brand: "avon", cream_type: "gel", price: 12.00, size: 50, notes:"best cream ever"}, {name: "the worst cream", brand: "vaseline", cream_type: "gel", price: 14.00, size: 50, notes:"literally the worst cream ever"}])
+csv_text = File.read(Rails.root.join('lib', 'seeds', 'creams.csv'))
+creams = CSV.parse(csv_text, :headers => true, :encoding => 'utf-8')
 
-ingredients = Ingredient.create([{name: "acid", purpose: "cleaning"}, {name: "pastrami", purpose: "delicious"}])
+creams.each do |row|
+  c = Cream.new
+  c.name = row['name']
+  c.brand = row['brand']
+  c.cream_type = row['cream_type']
+  c.price = row['price']
+  c.size = row['size']
+  c.notes = row['notes']
+  c.favorite = row['favorite']
+  c.save
+
+  row['ingredients'].split(", ").each do |ing|
+    i = Ingredient.find_or_create_by(name: ing)
+    i.name = ing
+    i.save
+
+    ci = CreamIngredient.new
+    ci.cream_id = c.id
+    ci.ingredient_id = i.id
+    ci.save
+  end
+end

@@ -6,6 +6,7 @@ class IngredientsController < ApplicationController
 
   def show
     set_ingredient
+    @creams = Cream.all
   end
 
   def new

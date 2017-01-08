@@ -1,11 +1,16 @@
-<h1>AN INGREDIENT</h1>
+<h1><%= @ingredient.name %></h1>
+<h3>
+  Purpose: <br>
+  <%= @ingredient.purpose %><br><br>
 
-<h2><%= @ingredient.name %></h2>
-<h3>Purpose: <br>
-
-<%= @ingredient.purpose %></h3>
-
-<%= button_to "Edit This Ingredient", edit_ingredient_path(@ingredient), method: :get %>
+  Products featuring this ingredient: <br>
+  <ul style="list-style: none">
+  <% @ingredient.creams.each do |c| %>
+    <li><%= link_to c.name, c %></li>
+  <% end %>
+</ul>
+</h3>
+<%= button_to "EDIT THIS INGREDIENT", edit_ingredient_path(@ingredient), method: :get %>
 <%= button_to "DELETE THIS INGREDIENT", @ingredient, method: :delete, data: { confirm: "Are you sure?" } %>
 
 <h2>

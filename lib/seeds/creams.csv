@@ -3,7 +3,7 @@ Banila Co,Clean it Zero,sherbet cleanser,16.00,100,mineral oil,smells like a blo
 Banila Co,Clean it Zero Radiance,sherbet cleanser,18.00,100,"rose hip oil, macademia oil",,t
 Rosette,Sea Clay Smooth (Green),paste cleanser,6.00,120,"tanakura clay, kaolin, licorice",,t
 Nuxe,Reve de Miel Face Cleansing Gel,gel cleanser,10.00,200,"honey, sunflower seed oil, allantoin",smells really nice,t
-Hada Labo,Tamagohada Ahyaluronic acid+Bhyaluronic acid Foaming Wash,foam cleanser,7.00,160,"glycolic acid, salicylic acid",,f
+Hada Labo,Tamagohada AHA+  BHA Foaming Wash,foam cleanser,7.00,160,"glycolic acid, salicylic acid",,f
 Nuxe,Toning Lotion with Rose Petals,toner,11.50,200,"rose water, witch hazel, allantoin, hyaluronic acid",,t
 Thayers,Alcohol-Free Rose Petal Witch Hazel,toner,9.00,355,"witch hazel, rose water, aloe",,t
 SK-II,Facial Treatment Clear Lotion,essence,6.50,30,"galactomyces ferment, hyaluronic acid, salicylic acid, lactic acid",,f
@@ -32,23 +32,22 @@ Secret Key,Wolf Guy Perfect All in One Fluid,milky lotion,12.50,150,"niacinamide
 Andalou Naturals,Argan + Omega Natural Glow,oil,12.00,56,"argan oil, borage oil, evening primrose oil, MAP, sunflower seed oil, jojoba oil, flaxseed oil, pomegranate seed oil",,t
 Nuxe,Huile Prodigieus OR,oil,23.00,50,"macademia oil, almond oil, hazelnut oil, camellia oil, vitamin E, borage oil, olive oil, sunflower seed oil, mica",,t
 Purebess,Multi 4 Syn-Ake Cream,cream,7.50,50,"Syn-Ake, palmitoyl pentapeptide-5, EGF, shea butter, jojoba oil, grape seed oil, adenosine",,f
-It's Skin,Star Cream,day cream,12.00,50,"niacinamide, starfish collagen, shea butter, titanium dioxide, Brazil nut oil, jojoba oil, adenosineSPF 25 / PA++",SPF 25 / PA++,f
+It's Skin,Star Cream,day cream,12.00,50,"niacinamide, starfish collagen, shea butter, titanium dioxide, Brazil nut oil, jojoba oil, adenosine",SPF 25 / PA++,f
 LadyKin,Vanpir Dark Repair Cream,night cream,15.00,50,"dragon blood resin, arbutin, coconut oil, petrolatum, hyaluronic acid, rose water, vitamin E, adenosine, allantoin",,t
 CeraVe,Moisturizing Lotion PM,night cream,10.00,89,"niacinamide, ceramides, cholesterol, phytosphingosine, hyaluronic acid",niacinamide 4%,t
 Andalou Naturals,Purple Carrot + C Luminous Night,night cream,20.00,50,"flaxseed oil, borage oil, evening primrose oil, rosehip oil, avocado oil, sunflower seed oil, aloe, MAP, hyaluronic acid, squalane, vitamin E, allantoin",,f
-Red Skin,Piggy Collagen Black Pearl Jelly Pack,sleeping mask,9.00,100,literally made from pigs,,f
+Red Skin,Piggy Collagen Black Pearl Jelly Pack,sleeping mask,9.00,100,"collagen, pearl powder, macademia oil, hyaluronic acid, vitamin E, soybean ferment, adenosine",literally made from pigs,f
 Naiad,Ghassoul Tablets,clay mask,10.00,150,ghassoul clay,use carbonated water,f
 LadyKin,Vanpir Dark Repairing Water Mask,sleeping mask,15.00,50,"dragon blood resin, rose water, witch hazel, hyaluronic acid, betaine, adenosine, allantoin",,f
 Dr. Jart+,Return to Sweet 16,hydrogel mask,25.00,5,"niacinamide, collagen, peptides, sea kelp, allantoin, ginseng",,f
 Nature Republic,The First,sheet mask,10.00,20,"niacinamide, saccharomyces ferment, allantoin, aloe, snail secretion filtrate, hyaluronic acid, licorice, schizandra, propolis, vitamin E",,t
 3W Clinic,Fresh Syn-Ake,sheet mask,10.00,10,"niacinamide, Syn-Ake, alcohol, hyaluronic acid, allantoin","synthetic snake venom, botox substitute",f
-My Schemimg,Chrystal Whitening Eye Mask,hydrogel mask,13.00,10,"ascorbic acid, collagen, hyaluronic acid, peptides",,f
+My Schemimg,Chrystal Whitening Eye Mask,hydrogel mask,13.00,10,"L-ascorbic acid, collagen, hyaluronic acid, peptides",,f
 Dr. Morita,Whitening Essence Facial Mask,sheet mask,8.00,10,"tranexamic acid, vitamin B5, aloe, arbutin, allantoin, hyaluronic acid",,t
 Soo Beauté,Super Aqua Sun Protector,sunscreen,7.50,40,"titanium dioxide, babassu oil",,f
 Guerlain,Blanc de Pearl White UV Shield,sunscreen,12.00,40,titanium dioxide,,f
-Secret Key,UV Cut High Protection Sun Cream,sunscreen,6.00,30,no titanium dioxide,,f
 Rosette,White Clay Lift (Pink),paste cleanser,6.00,120,"kaolin, hyaluronic acid",,f
-Cosrx,Ahyaluronic acid 7 Whitehead Power Liquid,essence,15.00,100,"glycolic acid, niacinamide, vitamin B5, hyaluronic acid",GA 7%,f
+Cosrx,AHA 7 Whitehead Power Liquid,essence,15.00,100,"glycolic acid, niacinamide, vitamin B5, hyaluronic acid",GA 7%,f
 Secret Key,Starting Treatment Essence Rose ,essence,15.00,150,"galactomyces ferment, niacinamide",,f
 Tony Moly,Pocket Bunny Moist (Pink),mist,8.00,60,"aloe, alcohol, arginine",,t
 Kikumasamune,Skin Care Lotion High Moist (Pink),watery lotion,7.50,500,"rice ferment (sake), ceramides, arbutin, licorice",,t
@@ -74,4 +73,4 @@ Mizon,King to the Kong Aqua Step-Up,gel,12.00,300,"niacinamide, allantoin, macad
 Dr. Lin,Daily Hydrating Gel,gel,10.00,120,"aloe, arbutin, hyaluronic acid, allantoin",boring,f
 Garnier,Sakura White Pinkish Radiance Moisturizing Cream,day cream,13.50,50,"niacinamide, titanium dioxide, vitamin C, salicylic acid","too thick for day cream, low spf",f
 Secret Key,Honey Bee's AC Control Spot,gel,6.00,15,"tea tree oil, bee venom, propolis, alcohol, salicylic acid",doesn't do anything,f
-RoC,Multi-Correxion Eye Treatment,night cream,17.00,15,"ascorbic acid, retinol, shea butter, vitamin E, vitamin B5",whatever eye creams are a scam,f
+RoC,Multi-Correxion Eye Treatment,night cream,17.00,15,"L-ascorbic acid, retinol, shea butter, vitamin E, vitamin B5",whatever eye creams are a scam,f
