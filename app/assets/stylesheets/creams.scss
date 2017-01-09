@@ -1,3 +1,23 @@
-// Place all the styles related to the Creams controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.ingredients {
+    min-width: 30%;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+.cream_info {
+    max-width:25%;
+    margin-right: 40px;
+    display: block;
+    float: left;
+}
+
+
+.notes {
+  color: #fd83a3;
+  padding-top: 5px;
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: auto;
+}

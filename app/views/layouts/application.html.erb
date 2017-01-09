@@ -2,7 +2,7 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
-    <title>Creamy</title>
+    <title>creamy</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,6 +10,8 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div id='page'>
+      <%= yield %>
+    </div>
   </body>
 </html>

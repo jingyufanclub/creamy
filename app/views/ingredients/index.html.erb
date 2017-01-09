@@ -1,11 +1,18 @@
-<div id="page">
   <h1>BEST SKIN CARE INGREDIENTS</h1>
-  <h2>
-    <ol>
-      <% @ingredients.each do |i| %>
-      <li><%= link_to i.name, i %></li>
-      <% end %>
-    </ol>
-    <%= button_to "ADD AN INGREDIENT", new_ingredient_path, method: :get %>
-  </h2>
-</div>
+  <div class='ing_info'>
+    &#x2605; = best best
+      <ol>
+        <% @ingredients.each do |i| %>
+        <li>
+          <%= link_to i.name, i %>
+          <% if i.best %>
+          &#x2605;
+          <% end %>
+        </li>
+        <% end %>
+      </ol>
+    </div>
+    <div class='nav'>
+    <%= link_to "Add", new_ingredient_path, method: :get %><br>
+    <%= link_to "Home", root_path %>
+    </div>

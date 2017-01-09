@@ -1,7 +1,7 @@
 class IngredientsController < ApplicationController
 
   def index
-    @ingredients = Ingredient.all
+    @ingredients = Ingredient.order("lower(name)").all
   end
 
   def show
@@ -48,6 +48,6 @@ class IngredientsController < ApplicationController
   end
 
   def ingredient_params
-    params.require(:ingredient).permit(:name, :purpose)
+    params.require(:ingredient).permit(:name, :purpose, :best)
   end
 end

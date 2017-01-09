@@ -1,25 +1,25 @@
 brand,name,cream_type,price,size,ingredients,notes,favorite
 Banila Co,Clean it Zero,sherbet cleanser,16.00,100,mineral oil,smells like a blow pop,t
-Banila Co,Clean it Zero Radiance,sherbet cleanser,18.00,100,"rose hip oil, macademia oil",,t
+Banila Co,Clean it Zero Radiance,sherbet cleanser,18.00,100,"rosehip oil, macademia oil",,t
 Rosette,Sea Clay Smooth (Green),paste cleanser,6.00,120,"tanakura clay, kaolin, licorice",,t
 Nuxe,Reve de Miel Face Cleansing Gel,gel cleanser,10.00,200,"honey, sunflower seed oil, allantoin",smells really nice,t
 Hada Labo,Tamagohada AHA+  BHA Foaming Wash,foam cleanser,7.00,160,"glycolic acid, salicylic acid",,f
-Nuxe,Toning Lotion with Rose Petals,toner,11.50,200,"rose water, witch hazel, allantoin, hyaluronic acid",,t
+Nuxe,Toning Lotion with Rose Petals,toner,11.50,200,"glycolic acid, almond oil, allantoin, licorice, vitamin E, vitamin B5",,t
 Thayers,Alcohol-Free Rose Petal Witch Hazel,toner,9.00,355,"witch hazel, rose water, aloe",,t
 SK-II,Facial Treatment Clear Lotion,essence,6.50,30,"galactomyces ferment, hyaluronic acid, salicylic acid, lactic acid",,f
 Soo Beauté,Gold Collagen Treatment Essence,essence,7.50,200,"rice ferment (sake), golden collagenine, alcohol, allantoin, mica, titanium dioxide, hyaluronic acid",,t
 LadyKin,Hydro White Illumination Toner,essence,15.00,100,"niacinamide, hyaluronic acid, ginseng, allantoin, licorice",,f
 Tony Moly,Pocket Bunny Sleek (White),mist,8.00,60,"witch hazel, alcohol, licorice, arginine",baby powder smell,t
 Skin Actives,Vitamin C Serum,serum,15.50,30,"L-ascorbic acid, vitamin E, ferulic acid, hyaluronic acid, phloretine, pomegranate seed oil, astaxanthin","C 20%, sticky",t
-Timeless,20% C + E + Ferulic Acid,serum,25.00,30,"L-ascorbic acid, vitamin E, ferulic acid, hyaluronic acid, vitamin vitamin B5",C 20%,t
+Timeless,20% C + E + Ferulic Acid,serum,25.00,30,"L-ascorbic acid, vitamin E, ferulic acid, hyaluronic acid, vitamin B5",C 20%,t
 Stridex,Maximum Strength Pads,pad,4.00,55,"salicylic acid, menthol",SA 2%,t
 Nip + Fab,Glycolic Fix Pads,pad,13.00,60,"glycolic acid, witch hazel, lactic acid, vitamin B5, hyaluronic acid",GA 2.8%,t
 Nip + Fab,Glycolic Fix Night Pads Extreme,pad,15.00,60,"glycolic acid, niacinamide, mandelic acid, salicylic acid, lactic acid, vitamin B5, hyaluronic acid",GA 5%,t
 Pixi,Glow Tonic,toner,15.00,100,"glycolic acid, aloe, witch hazel, ginseng",GA 5%,t
 Alpha Hydrox ,Oil-Free Treatment Anti-Wrinkle,gel,10.00,50,"glycolic acid, sea kelp, vitamin B5",GA 10%,t
-Glycolic Formulations,Rejuvenating Eye Cream,cream,5.00,15,"glycolic acid, almond oil, allantoin, licorice, E, vitamin B5",GA 10%,f
-Lee Ji Ham,Tea Tree 90 Essence,serum,13.00,50,"tea tree extract, sea buckthorn, trehalose, hyaluronic acid",,f
-Lee Ji Ham,Vita-Propolis Ampoule,serum,12.00,15,"propolis, vitamin B3, niacinamide, sea buckthorn,  witch hazel, arginine, licorice, hyaluronic acid, adenosine",,t
+Glycolic Formulations,Rejuvenating Eye Cream,cream,5.00,15,"glycolic acid, almond oil, allantoin, licorice, vitamin E, vitamin B5",GA 10%,f
+Lee Ji Ham,Tea Tree 90 Essence,serum,13.00,50,"tea tree oil, sea buckthorn, trehalose, hyaluronic acid",,f
+Lee Ji Ham,Vita-Propolis Ampoule,serum,12.00,15,"propolis, niacinamide, sea buckthorn, witch hazel, arginine, licorice, hyaluronic acid, adenosine",,t
 Ladykin,Vanpir Dark Repair Youth Activator,serum,16.00,50,"dragon blood resin, arbutin, hyaluronic acid, rose water, ginseng, arginine, adenosine, licorice",,t
 Supatret,Tretinoin Microsphere 0.04%,gel,6.25,20,tretinoin,"tretinoin 0.04%, synergistic with BP",t
 Dr. Lin,Acne Spot Corrector,gel,8.00,30,"benzoyl peroxide, arbutin, kojic acid, allantoin, vitamin B5, hyaluronic acid","synergistic with retinoid, BP 5%",t
@@ -42,7 +42,6 @@ LadyKin,Vanpir Dark Repairing Water Mask,sleeping mask,15.00,50,"dragon blood re
 Dr. Jart+,Return to Sweet 16,hydrogel mask,25.00,5,"niacinamide, collagen, peptides, sea kelp, allantoin, ginseng",,f
 Nature Republic,The First,sheet mask,10.00,20,"niacinamide, saccharomyces ferment, allantoin, aloe, snail secretion filtrate, hyaluronic acid, licorice, schizandra, propolis, vitamin E",,t
 3W Clinic,Fresh Syn-Ake,sheet mask,10.00,10,"niacinamide, Syn-Ake, alcohol, hyaluronic acid, allantoin","synthetic snake venom, botox substitute",f
-My Schemimg,Chrystal Whitening Eye Mask,hydrogel mask,13.00,10,"L-ascorbic acid, collagen, hyaluronic acid, peptides",,f
 Dr. Morita,Whitening Essence Facial Mask,sheet mask,8.00,10,"tranexamic acid, vitamin B5, aloe, arbutin, allantoin, hyaluronic acid",,t
 Soo Beauté,Super Aqua Sun Protector,sunscreen,7.50,40,"titanium dioxide, babassu oil",,f
 Guerlain,Blanc de Pearl White UV Shield,sunscreen,12.00,40,titanium dioxide,,f
@@ -71,6 +70,6 @@ Mizon,All in One Snail Repair Cream,cream,24.00,50,"snail secretion filtrate, hy
 Elizavecca,Milky Piggy Sea Salt Cream,gel,14.00,100,"sea salt, collagen, niacinamide, allantoin, hyaluronic acid",meh,f
 Mizon,King to the Kong Aqua Step-Up,gel,12.00,300,"niacinamide, allantoin, macademia oil",sticky,f
 Dr. Lin,Daily Hydrating Gel,gel,10.00,120,"aloe, arbutin, hyaluronic acid, allantoin",boring,f
-Garnier,Sakura White Pinkish Radiance Moisturizing Cream,day cream,13.50,50,"niacinamide, titanium dioxide, vitamin C, salicylic acid","too thick for day cream, low spf",f
+Garnier,Sakura Pinkish Radiance Moisturizing Cream,day cream,13.50,50,"niacinamide, titanium dioxide, vitamin C, salicylic acid","too thick for day cream, low spf",f
 Secret Key,Honey Bee's AC Control Spot,gel,6.00,15,"tea tree oil, bee venom, propolis, alcohol, salicylic acid",doesn't do anything,f
 RoC,Multi-Correxion Eye Treatment,night cream,17.00,15,"L-ascorbic acid, retinol, shea butter, vitamin E, vitamin B5",whatever eye creams are a scam,f

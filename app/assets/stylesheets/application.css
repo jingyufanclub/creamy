@@ -15,25 +15,46 @@
  */
 
 body {
+    background-image: url('lipstick.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: 'Montserrat', sans-serif;
     color: #222;
     background-color: #fff4f4;
+    font-size: 1.3em;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+​ h1 {
+    font-size: 60px;
 }
 
 a {
     text-decoration: none;
-    color: #4A235A;
+    color: #4a235a;
 }
 
 a:visited {
-    color: #dcfcdc;
+    color: #d2b4de;
 }
 
 a:hover {
-    color: #D2B4DE;
+    color: #f17f94;
 }
 
 #page {
-    padding: 50px;
-    margin: auto;
+    padding: 20px;
+    margin: 20px 40px;
+}
+
+.nav {
+    max-width: 25%;
+    margin: auto 20px auto 80px;
+    display: block;
+    float: left;
 }
