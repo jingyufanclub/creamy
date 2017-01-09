@@ -10,9 +10,4 @@ class Cream < ApplicationRecord
   def cost_per_unit
     '%.2f' % (price.to_f / size.to_f)
   end
-
-  def sum_of_all_products
-    sum(:price)
-  end
-
 end
