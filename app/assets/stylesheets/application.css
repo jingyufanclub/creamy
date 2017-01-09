@@ -58,3 +58,9 @@ a:hover {
     display: block;
     float: left;
 }
+
+.small {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #d70020;
+}
