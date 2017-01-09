@@ -24,6 +24,7 @@
   <div class='nav'>
   <%= link_to "Edit", edit_cream_path(@cream), method: :get %><br>
   <%= link_to "Delete", @cream, method: :delete, data: { confirm: "Are you sure?" } %><br>
+  <%= link_to "New", new_cream_path, method: :get %><br>
   <%= link_to "All", creams_path %><br>
   <%= link_to "Home", root_path %>
   </div>
