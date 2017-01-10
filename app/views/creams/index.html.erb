@@ -1,7 +1,7 @@
   <h1>My Skin Care Products</h1>
   <div class='ing_info'>
   &hearts; = favorite favorite
-  &#9789; = in rotation
+  &#9789; = current rotation
       <ol>
         <% @creams.each do |c| %>
         <li><%= link_to c.name, c %> <%= "#{c.fave}".html_safe %> <%= "#{c.rotation}".html_safe %>
