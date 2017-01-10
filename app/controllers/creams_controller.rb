@@ -10,7 +10,7 @@ class CreamsController < ApplicationController
 
   def new
     @cream = Cream.new
-    @ingredients = Ingredient.order("lower(name)").all
+    @ingredients = Ingredient.all
   end
 
   def create
@@ -22,14 +22,14 @@ class CreamsController < ApplicationController
     if @cream.save
       redirect_to cream_path(@cream)
     else
-      @ingredients = Ingredient.order("lower(name)").all
+      @ingredients = Ingredient.all
       render :new
     end
   end
 
   def edit
     set_cream
-    @ingredients = Ingredient.order("lower(name)").all
+    @ingredients = Ingredient.all
   end
 
   def update
@@ -41,7 +41,7 @@ class CreamsController < ApplicationController
       end
       redirect_to cream_path(@cream)
     else
-      @ingredients = Ingredient.order("lower(name)").all
+      @ingredients = Ingredient.all
       render :edit
     end
   end

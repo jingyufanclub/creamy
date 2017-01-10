@@ -9,4 +9,8 @@ class Ingredient < ApplicationRecord
       "&#x2605;"
     end
   end
+
+  def self.order_by_name
+    order("lower(name)")
+  end
 end

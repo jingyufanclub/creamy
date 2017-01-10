@@ -11,6 +11,14 @@ class Cream < ApplicationRecord
     '%.2f' % (price.to_f / size.to_f)
   end
 
+  def self.order_by_fave
+    order("favorite DES")
+  end
+
+  def self.order_by_rotation
+    order("rotation DES")
+  end
+
   def fave
     if favorite
       "&hearts;"
