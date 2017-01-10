@@ -22,6 +22,7 @@ class CreamsController < ApplicationController
     if @cream.save
       redirect_to cream_path(@cream)
     else
+      @ingredients = Ingredient.order("lower(name)").all
       render :new
     end
   end
@@ -40,6 +41,7 @@ class CreamsController < ApplicationController
       end
       redirect_to cream_path(@cream)
     else
+      @ingredients = Ingredient.order("lower(name)").all
       render :edit
     end
   end
@@ -55,6 +57,6 @@ class CreamsController < ApplicationController
   end
 
   def cream_params
-    params.require(:cream).permit(:name, :brand, :cream_type, :price, :size, :notes, :favorite, ingredient_ids: [], ingredient_attributes: [:id, :name, :_destroy])
+    params.require(:cream).permit(:name, :brand, :cream_type, :price, :size, :notes, :favorite, ingredient_ids: [], ingredient_attributes: [:id, :name])
   end
 end

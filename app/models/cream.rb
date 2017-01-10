@@ -1,7 +1,7 @@
 class Cream < ApplicationRecord
   has_many :cream_ingredients
   has_many :ingredients, through: :cream_ingredients
-  accepts_nested_attributes_for :ingredients, allow_destroy: true
+  accepts_nested_attributes_for :ingredients
 
   validates :name, presence: true, uniqueness: { case_sensitive: false }
   validates :price, presence: true, numericality: true
