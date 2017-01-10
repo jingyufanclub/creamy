@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170106005805) do
+ActiveRecord::Schema.define(version: 20170110053033) do
 
   create_table "cream_ingredients", force: :cascade do |t|
     t.integer  "cream_id"
@@ -26,9 +26,10 @@ ActiveRecord::Schema.define(version: 20170106005805) do
     t.decimal  "price"
     t.integer  "size"
     t.string   "notes"
-    t.boolean  "favorite",   default: false
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.boolean  "favorite",         default: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+    t.boolean  "current_rotation", default: false
   end
 
   create_table "ingredients", force: :cascade do |t|

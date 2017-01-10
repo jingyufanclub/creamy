@@ -1,14 +1,11 @@
   <h1>
-    <%= @cream.name %>
-    <% if @cream.favorite %>
-    &hearts;
-    <% end %>
+    <%= @cream.name %> <%= "#{@cream.fave}".html_safe %> <%= "#{@cream.rotation}".html_safe %>
   </h1>
   <div class='ingredients'>
     Salient Ingredients
   <ul>
     <% @cream.ingredients.each do |i| %>
-      <li><%= link_to i.name, i %></li>
+      <li><%= link_to i.name, i %> <%= "#{i.best_best}".html_safe %></li>
     <% end %>
   </ul>
   </div>

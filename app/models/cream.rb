@@ -10,4 +10,16 @@ class Cream < ApplicationRecord
   def cost_per_unit
     '%.2f' % (price.to_f / size.to_f)
   end
+
+  def fave
+    if favorite
+      "&hearts;"
+    end
+  end
+
+  def rotation
+    if current_rotation
+      "&#9789;"
+    end
+  end
 end

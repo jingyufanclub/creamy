@@ -59,9 +59,3 @@ a:hover {
     display: block;
     float: left;
 }
-
-.small {
-    font: 400 0.65em 'Crimson Text', serif;
-    color: #FB4300;
-    text-align: right;
-}

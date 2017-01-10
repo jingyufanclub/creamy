@@ -57,6 +57,6 @@ class CreamsController < ApplicationController
   end
 
   def cream_params
-    params.require(:cream).permit(:name, :brand, :cream_type, :price, :size, :notes, :favorite, ingredient_ids: [], ingredient_attributes: [:id, :name])
+    params.require(:cream).permit(:name, :brand, :cream_type, :price, :size, :notes, :favorite, :current_rotation, ingredient_ids: [], ingredient_attributes: [:id, :name])
   end
 end
