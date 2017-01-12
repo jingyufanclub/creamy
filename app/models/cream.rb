@@ -1,6 +1,7 @@
 class Cream < ApplicationRecord
   has_many :cream_ingredients
   has_many :ingredients, through: :cream_ingredients
+  belongs_to :format
   accepts_nested_attributes_for :ingredients
 
   validates :name, presence: true, uniqueness: { case_sensitive: false }
@@ -9,14 +10,6 @@ class Cream < ApplicationRecord
 
   def cost_per_unit
     '%.2f' % (price.to_f / size.to_f)
-  end
-
-  def self.order_by_fave
-    order("favorite DES")
-  end
-
-  def self.order_by_rotation
-    order("rotation DES")
   end
 
   def fave

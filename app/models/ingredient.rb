@@ -10,7 +10,4 @@ class Ingredient < ApplicationRecord
     end
   end
 
-  def self.order_by_name
-    order("lower(name)")
-  end
 end

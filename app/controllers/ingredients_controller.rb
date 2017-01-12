@@ -1,12 +1,11 @@
 class IngredientsController < ApplicationController
 
   def index
-    @ingredients = Ingredient.all
+    @ingredients = Ingredient.order(params[:sort], "lower(name)").all
   end
 
   def show
     set_ingredient
-    @creams = Cream.all
   end
 
   def new

@@ -7,11 +7,12 @@ creams.each do |row|
   c = Cream.new
   c.name = row['name']
   c.brand = row['brand']
-  c.cream_type = row['cream_type']
   c.price = row['price']
   c.size = row['size']
   c.notes = row['notes']
   c.favorite = row['favorite']
+  f = Format.find_or_create_by(kind: row['cream_type'])
+  c.format_id = f.id
   c.save
 
   row['ingredients'].split(", ").each do |ing|

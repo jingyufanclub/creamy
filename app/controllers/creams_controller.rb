@@ -1,16 +1,17 @@
 class CreamsController < ApplicationController
 
   def index
-    @creams = Cream.all
+    @creams = Cream.order(params[:sort]).all
   end
 
   def show
     set_cream
+    @format = Format.find(@cream.format_id)
   end
 
   def new
     @cream = Cream.new
-    @ingredients = Ingredient.all
+    @ingredients = Ingredient.order("lower(name)").all
   end
 
   def create
@@ -22,14 +23,14 @@ class CreamsController < ApplicationController
     if @cream.save
       redirect_to cream_path(@cream)
     else
-      @ingredients = Ingredient.all
+      @ingredients = Ingredient.order("lower(name)").all
       render :new
     end
   end
 
   def edit
     set_cream
-    @ingredients = Ingredient.all
+    @ingredients = Ingredient.order("lower(name)").all
   end
 
   def update
@@ -41,7 +42,7 @@ class CreamsController < ApplicationController
       end
       redirect_to cream_path(@cream)
     else
-      @ingredients = Ingredient.all
+      @ingredients = Ingredient.order("lower(name)").all
       render :edit
     end
   end
@@ -57,6 +58,6 @@ class CreamsController < ApplicationController
   end
 
   def cream_params
-    params.require(:cream).permit(:name, :brand, :cream_type, :price, :size, :notes, :favorite, :current_rotation, ingredient_ids: [], ingredient_attributes: [:id, :name])
+    params.require(:cream).permit(:name, :brand, :format_id, :price, :size, :notes, :favorite, :times_purchased, :current_rotation, ingredient_ids: [], ingredient_attributes: [:id, :name])
   end
 end

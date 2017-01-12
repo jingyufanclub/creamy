@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170110053033) do
+ActiveRecord::Schema.define(version: 20170111225130) do
 
   create_table "cream_ingredients", force: :cascade do |t|
     t.integer  "cream_id"
@@ -22,14 +22,19 @@ ActiveRecord::Schema.define(version: 20170110053033) do
   create_table "creams", force: :cascade do |t|
     t.string   "name"
     t.string   "brand"
-    t.string   "cream_type"
     t.decimal  "price"
     t.integer  "size"
     t.string   "notes"
+    t.integer  "times_purchased",  default: 1
+    t.integer  "format_id"
     t.boolean  "favorite",         default: false
+    t.boolean  "current_rotation", default: false
     t.datetime "created_at",                       null: false
     t.datetime "updated_at",                       null: false
-    t.boolean  "current_rotation", default: false
+  end
+
+  create_table "formats", force: :cascade do |t|
+    t.string "kind"
   end
 
   create_table "ingredients", force: :cascade do |t|

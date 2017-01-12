@@ -12,13 +12,12 @@
 
   <%= f.label :ingredient_ids, "Choose Ingredients" %>
   <br>
-  <%= f.select(:ingredient_ids, @ingredients.order_by_name.map {|i| [i.name, i.id] }, {prompt: "Select One or Many"}, {multiple: true, size: 8} )%>
+  <%= f.select(:ingredient_ids, @ingredients.map {|i| [i.name, i.id] }, {prompt: "Select One or Many"}, {multiple: true, size: 8} )%>
   <br><br>
     <%= f.fields_for :ingredient do |ff| %>
       <%= ff.label :name, "Add New Ingredient " %>
       <%= ff.text_field :name %>
       <%= ff.hidden_field :id %>
-      <%= ff.hidden_field :_destroy %>
     <% end %><br><br>
   <%= f.label :notes %><br>
   <%= f.text_area :notes, size:"50x3" %><br><br>

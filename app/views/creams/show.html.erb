@@ -12,10 +12,11 @@
 
   <div class='cream_info'>
     Brand: <%= @cream.brand %><br>
-    Type: <%= @cream.cream_type %><br>
+    Type: <%= link_to @format.kind, @format %><br>
     Price: <%= number_to_currency(@cream.price)%><br>
     Size: <%= @cream.size %> ml<br>
-    Cost per ml: $<%= @cream.cost_per_unit %><br><br>
+    Cost Per ml: $<%= @cream.cost_per_unit %><br>
+    Times Purchased: <%= @cream.times_purchased %><br><br>
   </div>
 
   <div class='nav'>

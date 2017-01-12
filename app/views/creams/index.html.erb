@@ -1,6 +1,7 @@
   <h1>My Skin Care Products</h1>
   <div class='ing_info'>
-  favorite favorite &hearts;  current rotation &#9789;
+  &hearts; = <%= link_to "favorite favorite", :sort => "favorite DESC" %>
+  &#9789; = <%= link_to "current rotation", :sort => "current_rotation DESC" %>
       <ol>
         <% @creams.each do |c| %>
         <li><%= link_to c.name, c %> <%= "#{c.fave}".html_safe %> <%= "#{c.rotation}".html_safe %>

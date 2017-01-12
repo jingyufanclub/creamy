@@ -1,8 +1,8 @@
   <h1>Best Skin Care Ingredients</h1>
   <div class='ing_info'>
-    best best &#x2605;
+    &#x2605; = <%= link_to 'best best', :sort => "best DESC" %>
       <ol>
-        <% @ingredients.order_by_name.each do |i| %>
+        <% @ingredients.each do |i| %>
         <li>
           <%= link_to i.name, i %> <%= "#{i.best_best}".html_safe %>
         </li>
