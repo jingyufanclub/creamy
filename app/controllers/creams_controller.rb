@@ -12,6 +12,7 @@ class CreamsController < ApplicationController
   def new
     @cream = Cream.new
     @ingredients = Ingredient.order("lower(name)").all
+    @formats = Format.order(:kind).all
   end
 
   def create
@@ -31,6 +32,7 @@ class CreamsController < ApplicationController
   def edit
     set_cream
     @ingredients = Ingredient.order("lower(name)").all
+    @formats = Format.order(:kind).all
   end
 
   def update
