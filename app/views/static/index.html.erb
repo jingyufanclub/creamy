@@ -5,4 +5,12 @@
   <%= link_to "LOOK GOOD, FEEL GOOD", creams_path%><br><br>
   <%= link_to "CRÈME DE LA CREAM", ingredients_path%><br><br>
   <%= link_to "IT COSTS #{number_to_currency(@sum)} TO LOOK THIS PRETTY", new_cream_path%><br><br>
+  <% if current_user %>
+    <%= link_to "LOGOUT", logout_path%>
+  <% else %>
+    <%= link_to "LOGIN", login_path%><br><br>
+    <% if flash[:notice] %>
+      <%= flash[:notice] %>
+    <% end %>
+  <% end %>
 </div>

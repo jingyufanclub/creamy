@@ -1,0 +1,11 @@
+<%= form_tag('/login') do %>
+  <%= label_tag "user[name]", "Username" %>
+  <%= text_field_tag "user[name]"%>
+<br><br>
+  <%= label_tag "user[password]", "Password" %>
+  <%= password_field_tag "user[password]"%>
+<br><br>
+  <%= button_tag "Sign In"%>
+<% end %>
+<br><br>
+<%= link_to 'Back', '/'%>
