@@ -10,6 +10,8 @@
       </ol>
     </div>
     <div class='nav'>
-    <%= link_to "New", new_cream_path, method: :get %><br>
+    <% if current_user %>
+      <%= link_to "New", new_cream_path, method: :get %><br>
+    <% end %>
     <%= link_to "Home", root_path %>
     </div>
