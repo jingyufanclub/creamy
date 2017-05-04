@@ -4,8 +4,12 @@ class SessionsController < ApplicationController
   end
 
   def create
-      @user = User.find_by(name: params[:user][:name].downcase)
+    @user = User.find_by(name: params[:user][:name].downcase)
+    if @user && @user.authenticate(params[:user][:password])
       session[:user_id] = @user.id
+      redirect_to '/'
+    else
+      flash[:notice] = "This app is read-only right meow."
       redirect_to '/'
     end
   end

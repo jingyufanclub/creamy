@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :ingredients
   resources :creams
   resources :formats, only: [:show, :index]
+  resources :sessions, only: [:new, :create, :destroy]
 end
