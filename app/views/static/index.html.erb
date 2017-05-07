@@ -1,16 +1,16 @@
 <div id="welcome_page">
 
   <h1>you're not not pretty</h1>
-  <div class='small'>It's so nice to be a beautiful girl.</div><br><br>
+  <div class='small'>
+    It's so nice to be a beautiful girl and spending <%= number_to_currency(@sum) %> since 2015.<br>
+    <% if current_user %>
+      Hello, <%= @user %>.<br>
+      <%= link_to "LOGOUT", logout_path, method: "delete" %>
+    <% else %>
+      <%= link_to "LOGIN", login_path %><br><br>
+    <% end %>
+  </div>
+  <br><br>
   <%= link_to "LOOK GOOD, FEEL GOOD", creams_path%><br><br>
   <%= link_to "CRÈME DE LA CREAM", ingredients_path%><br><br>
-  IT COSTS <%= number_to_currency(@sum) %> TO LOOK THIS PRETTY<br><br>
-  <% if current_user %>
-    <%= link_to "LOGOUT", logout_path, method: "delete" %>
-  <% else %>
-    <%= link_to "LOGIN", login_path %><br><br>
-    <% if flash[:notice] %>
-      <%= flash[:notice] %>
-    <% end %>
-  <% end %>
 </div>

@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       redirect_to '/'
     else
       flash[:notice] = "This app is read-only right meow."
-      redirect_to '/'
+      render :new
     end
   end
 

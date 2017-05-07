@@ -8,4 +8,7 @@
   <%= button_tag "Sign In"%>
 <% end %>
 <br><br>
-<%= link_to 'Back', '/'%>
+<% if flash[:notice] %>
+  <%= flash[:notice] %><br><br>
+<% end %>
+<%= link_to 'Return to Browse', '/'%>
