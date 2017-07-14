@@ -1,11 +1,15 @@
 #welcome_page {
-    max-width: 62vw;
-    margin: auto;
-    overflow: hidden;
+  max-width: 62vw;
+  margin: auto;
+  overflow: hidden;
 }
 
 .small {
-    font: 400 0.65em 'Crimson Text', serif;
-    color: #FB4300;
-    text-align: right;
+  font: 400 0.65em 'Crimson Text', serif;
+  color: #FB4300;
+  text-align: right;
+
+  a {
+    text-decoration: none;
+  }
 }
