@@ -1,7 +1,7 @@
 class FormatsController < ApplicationController
 
   def index
-    @formats = Format.all.order(:kind)
+    @formats = Format.all
   end
 
   def show
