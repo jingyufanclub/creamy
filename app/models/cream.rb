@@ -1,5 +1,5 @@
 class Cream < ApplicationRecord
-  has_many :cream_ingredients, -> { order :kind }
+  has_many :cream_ingredients, -> { order kind: :asc }
   has_many :ingredients, through: :cream_ingredients
   belongs_to :format
   accepts_nested_attributes_for :ingredients
