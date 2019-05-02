@@ -1,7 +1,7 @@
 class IngredientsController < ApplicationController
 
   def index
-    @ingredients = Ingredient.order(params[:sort], "lower(name)").all
+    @ingredients = Ingredient.all
   end
 
   def show

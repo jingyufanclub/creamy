@@ -37,16 +37,14 @@ ul {
     padding-left: 0;
 }
 
-a {
+a, a:visited {
+    text-decoration: none;
     color: #4a235a;
-}
-
-a:visited {
-    color: #d2b4de;
 }
 
 a:hover {
     color: #f17f94;
+    text-decoration: underline;
 }
 
 #page {
