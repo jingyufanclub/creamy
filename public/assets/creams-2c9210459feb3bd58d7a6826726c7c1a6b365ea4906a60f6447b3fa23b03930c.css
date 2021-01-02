@@ -1,0 +1,25 @@
+/* line 1, app/assets/stylesheets/creams.scss */
+.ingredients {
+  min-width: 30%;
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 8, app/assets/stylesheets/creams.scss */
+.cream_info {
+  max-width: 25%;
+  margin-right: 40px;
+  display: block;
+  float: left;
+}
+
+/* line 16, app/assets/stylesheets/creams.scss */
+.notes {
+  color: #fd83a3;
+  padding-top: 5px;
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: auto;
+}

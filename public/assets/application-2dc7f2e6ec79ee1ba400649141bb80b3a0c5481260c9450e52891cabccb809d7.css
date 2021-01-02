@@ -1,0 +1,117 @@
+/* line 1, app/assets/stylesheets/creams.scss */
+.ingredients {
+  min-width: 30%;
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 8, app/assets/stylesheets/creams.scss */
+.cream_info {
+  max-width: 25%;
+  margin-right: 40px;
+  display: block;
+  float: left;
+}
+
+/* line 16, app/assets/stylesheets/creams.scss */
+.notes {
+  color: #fd83a3;
+  padding-top: 5px;
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+/* line 1, app/assets/stylesheets/ingredients.scss */
+.ing_info {
+  width: 47%;
+  margin: auto 40px auto auto;
+  display: block;
+  float: left;
+}
+/* line 1, app/assets/stylesheets/static.scss */
+#welcome_page {
+  max-width: 62vw;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* line 7, app/assets/stylesheets/static.scss */
+.small {
+  font: 400 0.65em 'Crimson Text', serif;
+  color: #FB4300;
+  text-align: right;
+}
+
+/* line 12, app/assets/stylesheets/static.scss */
+.small a {
+  text-decoration: none;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of
+
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 18, app/assets/stylesheets/application.scss */
+body {
+  background-image: url(/assets/lipstick-dc244e877486692df81a2651ec5359ce38fca5e6a33cb53884195bf1578ea04e.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  background-color: #fff4f4;
+  font-size: 1.3em;
+  text-decoration-skip: ink;
+}
+
+/* line 30, app/assets/stylesheets/application.scss */
+h1 {
+  font: 700 70px 'Crimson Text', serif;
+  font-style: italic;
+}
+
+/* line 35, app/assets/stylesheets/application.scss */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 40, app/assets/stylesheets/application.scss */
+a, a:visited {
+  text-decoration: none;
+  color: #4a235a;
+}
+
+/* line 45, app/assets/stylesheets/application.scss */
+a:hover {
+  color: #f17f94;
+  text-decoration: underline;
+}
+
+/* line 50, app/assets/stylesheets/application.scss */
+#page {
+  min-width: 750px;
+  padding: 20px;
+  margin: 20px 40px;
+}
+
+/* line 56, app/assets/stylesheets/application.scss */
+.nav {
+  max-width: 25%;
+  margin: auto 20px auto 80px;
+  display: block;
+  float: left;
+}

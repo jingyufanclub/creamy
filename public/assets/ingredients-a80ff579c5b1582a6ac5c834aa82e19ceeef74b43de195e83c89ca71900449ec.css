@@ -1,0 +1,7 @@
+/* line 1, app/assets/stylesheets/ingredients.scss */
+.ing_info {
+  width: 47%;
+  margin: auto 40px auto auto;
+  display: block;
+  float: left;
+}
